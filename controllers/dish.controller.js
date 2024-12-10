@@ -12,7 +12,7 @@ const executeQuery = async (query, params) => {
 
 async function getAllDish(req, res){
     const { batch } = req.body;
-
+    
     if (!batch) {
         return res.status(400).json({ error: "Batch number is required for open orders" });
     }
